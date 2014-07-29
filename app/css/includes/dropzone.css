@@ -1,0 +1,25 @@
+.dz-preview {
+  display: inline-block;
+}
+.dz-preview .dz-details .dz-filename {
+  display: none;
+}
+.dz-preview .dz-details .dz-size {
+  display: none;
+}
+.dz-preview .dz-details img {
+  width: 150px;
+  margin: 20px;
+}
+.dz-preview .dz-progress span.dz-upload {
+  display: none;
+}
+.dz-preview .dz-success-mark {
+  display: none;
+}
+.dz-preview .dz-error-mark {
+  display: none;
+}
+.dz-preview .dz-error-message {
+  display: none;
+}
