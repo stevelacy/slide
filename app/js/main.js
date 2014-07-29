@@ -10,6 +10,7 @@ $(document).ready(function(){
     url: "#",
     maxFilesize: 6,
     dictResponseError: '',
+    previewContainer: '.file .previews',
     accept: function(file, done){
       console.log(file.path);
       images.push(file.path);
@@ -17,15 +18,14 @@ $(document).ready(function(){
     },
     init: function(){
       this.on('addedfile', function(file){
-        console.log(this);
-        $('.dz .message').fadeOut();
+        $('.dz-message').fadeOut();
+        $('.go').fadeIn();
       });
     }
   });
 
   $('.go').click(function(){
-    $('.message').html(images);
-    console.log(images);
+    $('.shadow').fadeOut();
     images.forEach(function(v, k){
       $('.images').append('<img src="' +v+ '" class="image">');
     });

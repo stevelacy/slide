@@ -1,0 +1,12 @@
+.button {
+  padding: 10px;
+  background: #dedede;
+  border: none;
+  -webkit-box-shadow: 0 0 1px #555;
+          box-shadow: 0 0 1px #555;
+  border-radius: 5px;
+}
+.button.red {
+  background: #f00;
+  color: #fff;
+}
