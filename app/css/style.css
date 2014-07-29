@@ -17,6 +17,9 @@ html {
 body {
   background: #efefef;
 }
+.ds-default.dz-message {
+  font-size: 25px;
+}
 .dz-preview {
   display: inline-block;
 }
@@ -74,9 +77,16 @@ body {
   display: flex;
 }
 .file {
+  position: relative;
   width: 80%;
   height: 80%;
   margin: 10%;
   background: #fff;
   text-align: center;
+}
+.file .message .svg-add .line {
+  stroke: #efefef;
+}
+.images .image {
+  width: 250px;
 }
