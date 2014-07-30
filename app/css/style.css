@@ -13,6 +13,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 body {
   background: #efefef;
@@ -33,15 +34,9 @@ body {
   width: 150px;
   margin: 20px;
 }
-.dz-preview .dz-progress span.dz-upload {
-  display: none;
-}
-.dz-preview .dz-success-mark {
-  display: none;
-}
-.dz-preview .dz-error-mark {
-  display: none;
-}
+.dz-preview .dz-progress,
+.dz-preview .dz-success-mark,
+.dz-preview .dz-error-mark,
 .dz-preview .dz-error-message {
   display: none;
 }
@@ -118,12 +113,24 @@ body {
 .shadow .button.go {
   display: none;
 }
+.images {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.images img {
+  display: inline-block;
+  height: 80%;
+  margin-top: 5%;
+}
+.pre-img,
+.pre-img img {
+  width: 1px;
+  height: 1px;
+}
 .content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-.images .image {
-  width: 250px;
 }
