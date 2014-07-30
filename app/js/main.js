@@ -47,7 +47,6 @@ $(document).ready(function(){
     slide();
   });
   $('.controls').click(function(){
-    $(this).fadeOut();
-    $('.shadow').fadeIn();
+    $('.shadow').fadeToggle();
   });
 });

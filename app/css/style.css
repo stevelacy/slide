@@ -97,7 +97,7 @@ body {
   stroke: #efefef;
 }
 .shadow {
-  z-index: 999;
+  z-index: 9;
   position: fixed;
   top: 0;
   right: 0;
@@ -133,6 +133,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 10;
   height: 40px;
   width: 40px;
   display: none;
