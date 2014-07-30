@@ -97,6 +97,7 @@ body {
   stroke: #efefef;
 }
 .shadow {
+  z-index: 999;
   position: fixed;
   top: 0;
   right: 0;
@@ -127,6 +128,18 @@ body {
 .pre-img img {
   width: 1px;
   height: 1px;
+}
+.controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+.controls svg {
+  fill: rgba(25,25,25,0.5);
+  stroke: rgba(255,255,255,0.5);
 }
 .content {
   display: -webkit-box;

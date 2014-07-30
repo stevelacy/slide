@@ -43,6 +43,11 @@ $(document).ready(function(){
 
   $('.go').click(function(){
     $('.shadow').fadeOut();
+    $('.controls').fadeIn();
     slide();
+  });
+  $('.controls').click(function(){
+    $(this).fadeOut();
+    $('.shadow').fadeIn();
   });
 });
