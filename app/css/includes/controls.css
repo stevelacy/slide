@@ -6,6 +6,10 @@
   height: 40px;
   width: 40px;
   display: none;
+  opacity: 0.2;
+}
+.controls:hover {
+  opacity: 1;
 }
 .controls svg {
   fill: rgba(25,25,25,0.5);

@@ -24,21 +24,18 @@ body {
 .dz-preview {
   display: inline-block;
 }
-.dz-preview .dz-details .dz-filename {
-  display: none;
+.dz-preview .dz-details {
+  position: relative;
+  padding: 0;
 }
-.dz-preview .dz-details .dz-size {
-  display: none;
+.dz-preview .dz-details .dz-remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .dz-preview .dz-details img {
   width: 150px;
   margin: 20px;
-}
-.dz-preview .dz-progress,
-.dz-preview .dz-success-mark,
-.dz-preview .dz-error-mark,
-.dz-preview .dz-error-message {
-  display: none;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -137,6 +134,10 @@ body {
   height: 40px;
   width: 40px;
   display: none;
+  opacity: 0.2;
+}
+.controls:hover {
+  opacity: 1;
 }
 .controls svg {
   fill: rgba(25,25,25,0.5);

@@ -3,12 +3,14 @@ $(document).ready(function(){
   var path = require('path');
 
   var images = [];
+  var template = '<div class="dz-preview dz-file-preview"><div class="dz-details"><div class="dz-remove">X</div><img data-dz-thumbnail /></div></div>';
 
   $(".file").dropzone({
     url: "#",
     maxFilesize: 3,
     dictResponseError: '',
     previewContainer: '.file .previews',
+    previewTemplate: template,
     accept: function(file, done){
       console.log(file.path);
       images.push(file.path);
@@ -48,5 +50,6 @@ $(document).ready(function(){
   });
   $('.controls').click(function(){
     $('.shadow').fadeToggle();
+    $('.dz-message').fadeToggle().html('Drop images here to add');
   });
 });
