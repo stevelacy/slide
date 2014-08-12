@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  var fs = require('fs');
-  var path = require('path');
 
   var images = [];
   var template = '<div class="dz-preview dz-file-preview"><div class="dz-details"><div class="dz-remove">X</div><img data-dz-thumbnail /></div></div>';
