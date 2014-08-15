@@ -1,6 +1,7 @@
 {
   "name": "slide",
   "author": "Steve Lacy me@slacy.me (http://slacy.me)",
+  "description": "Ambiant background slideshow",
   "dependencies": {
     "coffee-script": "^1.7.1",
     "ecstatic": "^0.5.1",
